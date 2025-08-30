@@ -60,11 +60,11 @@ export const retreatData = {
   speakers: [
     {
       id: 1,
-      name: "Debora 사모님",
+      name: "Deborah 사모님",
       title: "Morning Session Speaker",
       church: "Saving Grace",
       image: "/Images/DeboraSMN.jpg",
-      bio: "Debora 사모님 will be leading our morning session",
+      bio: "Deborah 사모님 will be leading our morning session",
       sessions: [
         {
           title: "Morning Session",
