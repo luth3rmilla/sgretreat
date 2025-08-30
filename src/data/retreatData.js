@@ -127,7 +127,7 @@ export const retreatData = {
       {
         time: "9:30 AM - 12:00 PM",
         activity: "Session 1: Samonim",
-        speaker: "Debora 사모님",
+        speaker: "Deborah 사모님",
         location: "Main Hall",
         note: "SMN will start her session at 10:00 AM"
       },
