@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sgretreat/static/css/main.cac92c03.css",
-    "main.js": "/sgretreat/static/js/main.dfd435eb.js",
+    "main.js": "/sgretreat/static/js/main.142acfdd.js",
     "index.html": "/sgretreat/index.html",
     "main.cac92c03.css.map": "/sgretreat/static/css/main.cac92c03.css.map",
-    "main.dfd435eb.js.map": "/sgretreat/static/js/main.dfd435eb.js.map"
+    "main.142acfdd.js.map": "/sgretreat/static/js/main.142acfdd.js.map"
   },
   "entrypoints": [
     "static/css/main.cac92c03.css",
-    "static/js/main.dfd435eb.js"
+    "static/js/main.142acfdd.js"
   ]
 }
