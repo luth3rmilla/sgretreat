@@ -24,7 +24,6 @@ const SchedulePage = () => {
             <h2 style={{ 
               fontSize: '2rem', 
               marginBottom: '20px', 
-              color: '#667eea',
               borderBottom: '3px solid #667eea',
               paddingBottom: '10px',
               color: 'white'
@@ -74,7 +73,6 @@ const SchedulePage = () => {
             <h2 style={{ 
               fontSize: '2rem', 
               marginBottom: '20px', 
-              color: '#667eea',
               borderBottom: '3px solid #667eea',
               paddingBottom: '10px',
               color: 'white'
@@ -124,7 +122,6 @@ const SchedulePage = () => {
             <h2 style={{ 
               fontSize: '2rem', 
               marginBottom: '20px', 
-              color: '#667eea',
               borderBottom: '3px solid #667eea',
               paddingBottom: '10px',
               color: 'white'
