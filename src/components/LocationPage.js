@@ -152,7 +152,6 @@ const LocationPage = () => {
                 color: 'rgba(255, 255, 255, 0.7)',
                 textAlign: 'center'
               }}>
-                경기 안성시 삼죽면 기솔리 270-5
               </div>
             </div>
 
@@ -173,13 +172,13 @@ const LocationPage = () => {
                 🗺️ Naver Maps
               </a>
               <a
-                href={`https://maps.google.com/search/${encodeURIComponent(address)}`}
+                href={`https://map.kakao.com/link/search/${encodeURIComponent(address)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
                 style={{ textDecoration: 'none' }}
               >
-                🗺️ Google Maps
+                🗺️ Kakao Maps
               </a>
               <button
                 onClick={copyAddress}
