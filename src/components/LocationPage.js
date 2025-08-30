@@ -165,7 +165,7 @@ const LocationPage = () => {
                 🗺️ Naver Maps
               </a>
               <a
-                href={`https://map.kakao.com/link/search/${encodeURIComponent(address)}`}
+                href={`https://map.kakao.com/link/search/$${address}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
