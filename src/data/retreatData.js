@@ -108,6 +108,10 @@ export const retreatData = {
   schedule: {
     friday: [
       {
+        time: "08:00 PM",
+        activity: "Departure from church",
+        location: "Church"
+      },{
         time: "10:00 PM",
         activity: "Worship & Prayer",
         location: "Main Hall"
@@ -115,38 +119,27 @@ export const retreatData = {
     ],
     saturday: [
       {
-        time: "8:00 AM",
-        activity: "Worship and Media Prep",
-        location: "Main Hall"
-      },
-      {
         time: "8:00 - 9:00 AM",
         activity: "Breakfast",
         location: "Dining Area"
       },
       {
         time: "9:30 AM - 12:00 PM",
-        activity: "Session 1: Samonim",
+        activity: "Morning Session",
         speaker: "Deborah 사모님",
         location: "Main Hall",
         note: "SMN will start her session at 10:00 AM"
       },
       {
-        time: "12:00 - 1:00 PM",
-        activity: "Lunch",
-        location: "Dining Area"
-      },
-      {
-        time: "1:00 - 1:45 PM",
-        activity: "Cell Groups",
+        time: "12:00 - 1:30 PM",
+        activity: "Lunch and Cell Groups",
         location: "Dining Area",
-        note: "around45 minutes"
+        note: "The cell groups should seat together for Lunch"
       },
       {
         time: "1:45 - 3:20 PM",
         activity: "Games",
         location: "Outdoor Area",
-        note: "1 hour"
       },
       {
         time: "3:30 - 4:00 PM",
@@ -165,7 +158,7 @@ export const retreatData = {
       },
       {
         time: "7:30 - 9:30 PM",
-        activity: "Session 2: Steve",
+        activity: "Evening Session",
         speaker: "Steve Lee",
         location: "Main Hall"
       },
@@ -188,14 +181,14 @@ export const retreatData = {
         location: "Main Hall"
       },
       {
-        time: "1:30 - 2:30 PM",
+        time: "1:30 - 2:20 PM",
         activity: "Clean Up and Group Picture",
         location: "Various Locations"
       },
       {
-        time: "3:00 PM",
+        time: "2:30 PM",
         activity: "Departure Back to Seoul",
-        location: "Meeting Point"
+        location: "Parking Lot"
       }
     ]
   },
