@@ -173,7 +173,7 @@ const CellGroupPage = () => {
               marginBottom: '10px',
               color: '#92400e'
             }}>
-              🧪 Demo Information
+              🧪 PS:
             </h4>
             <p style={{ 
               fontSize: '14px',

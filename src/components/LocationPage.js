@@ -5,6 +5,11 @@ const LocationPage = () => {
   const navigate = useNavigate();
   const address = "경기 안성시 삼죽면 기솔리 270-5";
 
+  const copyAddress = () => {
+    navigator.clipboard.writeText(address);
+    alert('Address copied to clipboard!');
+  };
+
   return (
     <div className="page-container">
       <button className="back-button" onClick={() => navigate('/')}>
@@ -110,40 +115,84 @@ const LocationPage = () => {
               color: 'white',
               textAlign: 'center'
             }}>
-              📍 Interactive Map
+              📍 Retreat Location
             </h3>
             
             <div style={{
               position: 'relative',
               width: '100%',
-              height: '400px',
+              height: '300px',
               borderRadius: '12px',
               overflow: 'hidden',
-              border: '2px solid rgba(255, 255, 255, 0.2)'
+              border: '2px solid rgba(255, 255, 255, 0.2)',
+              backgroundColor: 'rgba(255, 255, 255, 0.05)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexDirection: 'column'
             }}>
-              <iframe
-                src={`https://map.naver.com/v5/search/${encodeURIComponent(address)}`}
-                width="100%"
-                height="100%"
-                style={{ border: 'none' }}
-                title="Retreat Location Map"
-                allowFullScreen
-              />
+              <div style={{
+                fontSize: '3rem',
+                marginBottom: '20px',
+                color: '#667eea'
+              }}>
+                🏠
+              </div>
+              <div style={{
+                fontSize: '1.2rem',
+                color: 'white',
+                textAlign: 'center',
+                marginBottom: '10px',
+                fontWeight: '500'
+              }}>
+                {address}
+              </div>
+              <div style={{
+                fontSize: '1rem',
+                color: 'rgba(255, 255, 255, 0.7)',
+                textAlign: 'center'
+              }}>
+                경기 안성시 삼죽면 기솔리 270-5
+              </div>
             </div>
 
             <div style={{
               marginTop: '20px',
-              textAlign: 'center'
+              textAlign: 'center',
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr 1fr',
+              gap: '15px'
             }}>
               <a
-                href={`https://map.naver.com/v5/search/${encodeURIComponent(address)}`}
+                href={`https://map.naver.com/p/search/${encodeURIComponent(address)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
                 style={{ textDecoration: 'none' }}
               >
-                🔗 Open in Naver Maps
+                🗺️ Naver Maps
               </a>
+              <a
+                href={`https://maps.google.com/search/${encodeURIComponent(address)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary"
+                style={{ textDecoration: 'none' }}
+              >
+                🗺️ Google Maps
+              </a>
+              <button
+                onClick={copyAddress}
+                className="btn btn-secondary"
+                style={{ 
+                  textDecoration: 'none',
+                  backgroundColor: 'rgba(255, 193, 7, 0.2)',
+                  border: '1px solid rgba(255, 193, 7, 0.4)',
+                  color: '#ffc107'
+                }}
+              >
+                📋 Copy Address
+              </button>
             </div>
           </div>
 
