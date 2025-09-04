@@ -7,7 +7,7 @@ const SpeakersPage = () => {
 
   return (
     <div className="page-container">
-      <button className="back-button" onClick={() => navigate('/')}>
+      <button className="back-button" onClick={() => navigate('/')} style={{ color: 'black' }}>
         ←
       </button>
       

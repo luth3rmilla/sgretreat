@@ -1,60 +1,8 @@
-// Sample data - you can replace this with your actual data
+import participantsData from './retreat_participants.json';
+
 export const retreatData = {
   // Cell Groups and Members
-  cellGroups: [
-    {
-      id: 1,
-      name: "Alpha Cell",
-      leader: "John Smith",
-      room: "Room 101",
-      members: [
-        { name: "Alice Johnson", password: "retreat2025" },
-        { name: "Bob Wilson", password: "retreat2025" },
-        { name: "Carol Davis", password: "retreat2025" },
-        { name: "David Brown", password: "retreat2025" },
-        { name: "Eva Garcia", password: "retreat2025" }
-      ]
-    },
-    {
-      id: 2,
-      name: "Beta Cell",
-      leader: "Sarah Miller",
-      room: "Room 102",
-      members: [
-        { name: "Frank Lee", password: "retreat2025" },
-        { name: "Grace Taylor", password: "retreat2025" },
-        { name: "Henry Anderson", password: "retreat2025" },
-        { name: "Ivy Martinez", password: "retreat2025" },
-        { name: "Jack Thompson", password: "retreat2025" }
-      ]
-    },
-    {
-      id: 3,
-      name: "Gamma Cell",
-      leader: "Michael Chen",
-      room: "Room 103",
-      members: [
-        { name: "Kate Rodriguez", password: "retreat2025" },
-        { name: "Liam White", password: "retreat2025" },
-        { name: "Mia Johnson", password: "retreat2025" },
-        { name: "Noah Williams", password: "retreat2025" },
-        { name: "Olivia Jones", password: "retreat2025" }
-      ]
-    },
-    {
-      id: 4,
-      name: "Delta Cell",
-      leader: "Emily Davis",
-      room: "Room 104",
-      members: [
-        { name: "Paul Garcia", password: "retreat2025" },
-        { name: "Quinn Miller", password: "retreat2025" },
-        { name: "Rachel Wilson", password: "retreat2025" },
-        { name: "Sam Brown", password: "retreat2025" },
-        { name: "Tina Moore", password: "retreat2025" }
-      ]
-    }
-  ],
+  cellGroups: participantsData,
 
   // Speakers
   speakers: [
@@ -208,15 +156,16 @@ export const retreatData = {
   }
 };
 
-// Helper function to find member by name and password
-export const findMember = (name, password) => {
-  for (const cellGroup of retreatData.cellGroups) {
-    const member = cellGroup.members.find(
-      m => m.name.toLowerCase() === name.toLowerCase() && m.password === password
-    );
-    if (member) {
-      return { member, cellGroup };
-    }
-  }
-  return null;
+// Updated findMember function to work with name + birthday
+export const findMember = (name, birthday) => {
+  return participantsData.find(
+    member => 
+      member.name.toLowerCase() === name.toLowerCase() && 
+      member.birthday === birthday
+  );
+};
+
+// Helper function to get all members of a specific cell group
+export const getCellGroupMembers = (cellGroupName) => {
+  return participantsData.filter(member => member.cell === cellGroupName);
 };

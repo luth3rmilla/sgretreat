@@ -1,0 +1,434 @@
+[
+  {
+    "name": "Alex",
+    "cell": "Jacob",
+    "room": "로뎀 5",
+    "birthday": "19991019",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Alyssa",
+    "cell": "Andrew Shin",
+    "room": "로뎀 2",
+    "birthday": "19910729",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Angela",
+    "cell": "Christopher",
+    "room": "502",
+    "birthday": "19980814",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Anna",
+    "cell": "Emilee",
+    "room": "로뎀 5",
+    "birthday": "19980420",
+    "leader": false,
+    "baptism": true
+  },
+  {
+    "name": "Bree",
+    "cell": "Bree",
+    "room": "로뎀 5",
+    "birthday": "19910722",
+    "leader": true,
+    "baptism": false
+  },
+  {
+    "name": "Chae",
+    "cell": "Jorja",
+    "room": "로뎀 1",
+    "birthday": "19940924",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Debora LePanda",
+    "cell": "Jorja",
+    "room": "로뎀 3",
+    "birthday": "20030525",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Ellinor",
+    "cell": "Jacob",
+    "room": "로뎀 2",
+    "birthday": "19960515",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Emilee",
+    "cell": "Emilee",
+    "room": "로뎀 1",
+    "birthday": "19990213",
+    "leader": true,
+    "baptism": false
+  },
+  {
+    "name": "Esli",
+    "cell": "Kezia",
+    "room": "로뎀 3",
+    "birthday": "19980511",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Haemin",
+    "cell": "Bree",
+    "room": "로뎀 2",
+    "birthday": "19970312",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Irene",
+    "cell": "Kayla Park",
+    "room": "로뎀 4",
+    "birthday": "19991112",
+    "leader": false,
+    "baptism": true
+  },
+  {
+    "name": "Jenna",
+    "cell": "Temi",
+    "room": "로뎀 1",
+    "birthday": "19961116",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Jorja",
+    "cell": "Jorja",
+    "room": "로뎀 5",
+    "birthday": "20021006",
+    "leader": true,
+    "baptism": false
+  },
+  {
+    "name": "Kayla",
+    "cell": "Kayla Park",
+    "room": "로뎀 1",
+    "birthday": "20000516",
+    "leader": true,
+    "baptism": true
+  },
+  {
+    "name": "Keyla",
+    "cell": "Kezia",
+    "room": "로뎀 1",
+    "birthday": "19970224",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Kezia",
+    "cell": "Kezia",
+    "room": "502",
+    "birthday": "19950810",
+    "leader": true,
+    "baptism": false
+  },
+  {
+    "name": "Kimmie",
+    "cell": "Bree",
+    "room": "로뎀5",
+    "birthday": "19911113",
+    "leader": false,
+    "baptism": true
+  },
+  {
+    "name": "Liana",
+    "cell": "Christopher",
+    "room": "502",
+    "birthday": "20040201",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Lisa",
+    "cell": "Jacob",
+    "room": "로뎀 3",
+    "birthday": "20061012",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Lois",
+    "cell": "Daniel Park",
+    "room": "로뎀 5",
+    "birthday": "19940922",
+    "leader": false,
+    "baptism": true
+  },
+  {
+    "name": "Lu",
+    "cell": "Daniel Park",
+    "room": "로뎀 2",
+    "birthday": "19960427",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "McKenna",
+    "cell": "Christopher",
+    "room": "로뎀 4",
+    "birthday": "19950901",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Megan",
+    "cell": "Temi",
+    "room": "로뎀 1",
+    "birthday": "19931212",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Samantha",
+    "cell": "Kayla Park",
+    "room": "로뎀 4",
+    "birthday": "19970226",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Sarah Kim",
+    "cell": "Daniel Park",
+    "room": "로뎀 2",
+    "birthday": "20010529",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Sesi",
+    "cell": "Andrew Shin",
+    "room": "로뎀 4",
+    "birthday": "19960817",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Temi",
+    "cell": "Temi",
+    "room": "502",
+    "birthday": "19980102",
+    "leader": true,
+    "baptism": true
+  },
+  {
+    "name": "Victoria",
+    "cell": "Daniel Park",
+    "room": "로뎀 3",
+    "birthday": "19941006",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Yoonsue",
+    "cell": "Emilee",
+    "room": "로뎀 4",
+    "birthday": "20001212",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Goeun",
+    "cell": "Temi",
+    "room": "502",
+    "birthday": "19991012",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Adolfo",
+    "cell": "Kayla Park",
+    "room": "MRoom 3",
+    "birthday": "19950506",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Andrew Choe",
+    "cell": "Kezia",
+    "room": "MRoom 3",
+    "birthday": "20010427",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Andrew Shin",
+    "cell": "Andrew Shin",
+    "room": "MRoom 1",
+    "birthday": "19950928",
+    "leader": true,
+    "baptism": false
+  },
+  {
+    "name": "Brian",
+    "cell": "Jacob",
+    "room": "MRoom 2",
+    "birthday": "19940405",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Chris",
+    "cell": "Temi",
+    "room": "MRoom 2",
+    "birthday": "19981008",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Christopher",
+    "cell": "Christopher",
+    "room": "MRoom 1",
+    "birthday": "19800711",
+    "leader": true,
+    "baptism": false
+  },
+  {
+    "name": "Daniel Kim",
+    "cell": "Jorja",
+    "room": "MRoom 2",
+    "birthday": "19881114",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Daniel Park",
+    "cell": "Daniel Park",
+    "room": "MRoom 1",
+    "birthday": "19951101",
+    "leader": true,
+    "baptism": false
+  },
+  {
+    "name": "David",
+    "cell": "Kezia",
+    "room": "MRoom 2",
+    "birthday": "19950822",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Eric",
+    "cell": "Jorja",
+    "room": "MRoom 3",
+    "birthday": "19980307",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Gods Power",
+    "cell": "Kayla Park",
+    "room": "MRoom 1",
+    "birthday": "19950112",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Jacob",
+    "cell": "Jacob",
+    "room": "MRoom 2",
+    "birthday": "19930514",
+    "leader": true,
+    "baptism": true
+  },
+  {
+    "name": "Jae",
+    "cell": "Emilee",
+    "room": "MRoom 1",
+    "birthday": "19940505",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Jaewon",
+    "cell": "Bree",
+    "room": "MRoom 1",
+    "birthday": "19940503",
+    "leader": false,
+    "baptism": true
+  },
+  {
+    "name": "James Kim",
+    "cell": "Emilee",
+    "room": "MRoom 3",
+    "birthday": "19880711",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Jeff",
+    "cell": "Christopher",
+    "room": "MRoom 2",
+    "birthday": "19980314",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Jinwoo",
+    "cell": "Bree",
+    "room": "MRoom 3",
+    "birthday": "20021105",
+    "leader": false,
+    "baptism": true
+  },
+  {
+    "name": "Jun",
+    "cell": "Daniel Park",
+    "room": "MRoom 1",
+    "birthday": "19981027",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Larry",
+    "cell": "Andrew Shin",
+    "room": "MRoom 2",
+    "birthday": "19951201",
+    "leader": false,
+    "baptism": true
+  },
+  {
+    "name": "Mike",
+    "cell": "Temi",
+    "room": "MRoom 1",
+    "birthday": "20020927",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Mikey",
+    "cell": "Andrew Shin",
+    "room": "MRoom 3",
+    "birthday": "19910625",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Pastor Paul",
+    "cell": "-",
+    "room": "사랑방",
+    "birthday": "19710127",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "Deborah Samonim",
+    "cell": "-",
+    "room": "사랑방",
+    "birthday": "19820301",
+    "leader": false,
+    "baptism": false
+  }
+]
