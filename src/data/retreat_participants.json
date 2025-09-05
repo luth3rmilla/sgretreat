@@ -1,9 +1,17 @@
 [
   {
     "name": "Alex",
-    "cell": "Jacob",
+    "cell": "Kayla Park",
     "room": "로뎀 5",
     "birthday": "19991019",
+    "leader": false,
+    "baptism": false
+  },
+  {
+    "name": "AJ",
+    "cell": "Temi",
+    "room": "MRoom 1",
+    "birthday": "19941207",
     "leader": false,
     "baptism": false
   },
@@ -249,7 +257,7 @@
   },
   {
     "name": "Adolfo",
-    "cell": "Kayla Park",
+    "cell": "Jacob",
     "room": "MRoom 3",
     "birthday": "19950506",
     "leader": false,
@@ -313,7 +321,7 @@
   },
   {
     "name": "David",
-    "cell": "Kezia",
+    "cell": "Kayla Park",
     "room": "MRoom 2",
     "birthday": "19950822",
     "leader": false,
@@ -401,7 +409,7 @@
   },
   {
     "name": "Mike",
-    "cell": "Temi",
+    "cell": "Kezia",
     "room": "MRoom 1",
     "birthday": "20020927",
     "leader": false,
