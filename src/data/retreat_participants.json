@@ -122,7 +122,7 @@
   {
     "name": "Kayla",
     "cell": "Kayla Park",
-    "room": "로뎀 2",
+    "room": "로뎀 1",
     "birthday": "20000516",
     "leader": true,
     "baptism": true
@@ -130,7 +130,7 @@
   {
     "name": "Keyla",
     "cell": "Kezia",
-    "room": "로뎀 1",
+    "room": "로뎀 2",
     "birthday": "19970224",
     "leader": false,
     "baptism": false
