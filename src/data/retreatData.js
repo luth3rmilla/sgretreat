@@ -72,25 +72,25 @@ export const retreatData = {
         location: "Dining Area"
       },
       {
-        time: "9:30 AM - 12:00 PM",
+        time: "10:00 AM - 12:00 PM",
         activity: "Morning Session",
         speaker: "Deborah 사모님",
         location: "Main Hall",
         note: "SMN will start her session at 10:00 AM"
       },
       {
-        time: "12:00 - 1:30 PM",
+        time: "12:00 - 2:20 PM",
         activity: "Lunch and Cell Groups",
         location: "Dining Area",
         note: "The cell groups should seat together for Lunch"
       },
       {
-        time: "1:45 - 3:20 PM",
+        time: "2:30 - 3:35 PM",
         activity: "Games",
         location: "Outdoor Area",
       },
       {
-        time: "3:30 - 4:00 PM",
+        time: "3:40 - 4:00 PM",
         activity: "Baptism Prep",
         location: "Pool Area"
       },
@@ -118,7 +118,7 @@ export const retreatData = {
     ],
     sunday: [
       {
-        time: "9:00 - 10:00 AM",
+        time: "8:00 - 10:00 AM",
         activity: "Breakfast",
         location: "Dining Area"
       },
