@@ -67,23 +67,36 @@ const CellGroupResult = () => {
       return;
     }
     
-    // Download actual PDF files
-    const link = document.createElement('a');
-    if (sessionType === 'Morning') {
-      link.href = '/Saving Grace Retreat - Morning Session.pdf';
-      link.download = 'Saving Grace Retreat - Morning Session.pdf';
-      link.type = 'application/pdf';
-    } else if (sessionType === 'Afternoon') {
-      link.href = '/Saving Grace Retreat - Evening Session.pdf';
-      link.download = 'Saving Grace Retreat - Evening Session.pdf';
-      link.type = 'application/pdf';
-    }
+    // Download actual PDF files using fetch to force proper download
+    const fileName = sessionType === 'Morning' 
+      ? 'Saving Grace Retreat - Morning Session.pdf'
+      : 'Saving Grace Retreat - Evening Session.pdf';
     
-    // Ensure the link is properly configured for download
-    link.style.display = 'none';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    const filePath = sessionType === 'Morning'
+      ? '/Saving Grace Retreat - Morning Session.pdf'
+      : '/Saving Grace Retreat - Evening Session.pdf';
+    
+    fetch(filePath)
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = fileName;
+        link.style.display = 'none';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(error => {
+        console.error('Download failed:', error);
+        setSnackbar({
+          isOpen: true,
+          message: "Download failed. Please try again.",
+          type: 'error'
+        });
+      });
   };
 
   if (!result) {
