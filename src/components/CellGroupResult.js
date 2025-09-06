@@ -67,57 +67,28 @@ const CellGroupResult = () => {
       return;
     }
     
-    const fileName = sessionType === 'Morning' 
-      ? 'Saving Grace Retreat - Morning Session.pdf'
-      : 'Saving Grace Retreat - Evening Session.pdf';
+    // Google Drive links for the PDFs
+    const googleDriveLinks = {
+      Morning: 'https://drive.google.com/file/d/1DA7eLkVOjcmG9dJM05SlsZGzvOn4qSu4/view?usp=share_link',
+      Afternoon: 'https://drive.google.com/file/d/1gMq0Y-NM9jR3ew8Dij0ubXDsyxSavb1o/view?usp=share_link'
+    };
     
-    const filePath = sessionType === 'Morning'
-      ? '/Saving Grace Retreat - Morning Session.pdf'
-      : '/Saving Grace Retreat - Evening Session.pdf';
+    // Open Google Drive link in new tab
+    const link = document.createElement('a');
+    link.href = googleDriveLinks[sessionType];
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.style.display = 'none';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
     
-    // Use fetch for all devices - more reliable
-    fetch(filePath)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.blob();
-      })
-      .then(blob => {
-        // Create blob URL
-        const url = window.URL.createObjectURL(blob);
-        
-        // Create download link
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = fileName;
-        link.style.display = 'none';
-        
-        // Add to DOM, click, and remove
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        
-        // Clean up blob URL
-        setTimeout(() => {
-          window.URL.revokeObjectURL(url);
-        }, 100);
-        
-        // Show success message
-        setSnackbar({
-          isOpen: true,
-          message: "Download started successfully!",
-          type: 'success'
-        });
-      })
-      .catch(error => {
-        console.error('Download failed:', error);
-        setSnackbar({
-          isOpen: true,
-          message: "Download failed. Please try again or contact support.",
-          type: 'error'
-        });
-      });
+    // Show success message
+    setSnackbar({
+      isOpen: true,
+      message: "PDF opened in new tab. You can download it from Google Drive.",
+      type: 'success'
+    });
   };
 
   if (!result) {
