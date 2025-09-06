@@ -75,50 +75,49 @@ const CellGroupResult = () => {
       ? '/Saving Grace Retreat - Morning Session.pdf'
       : '/Saving Grace Retreat - Evening Session.pdf';
     
-    // Detect if it's a mobile device
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    
-    if (isMobile) {
-      // For mobile devices, open in new tab/window to force download or show
-      const link = document.createElement('a');
-      link.href = filePath;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.style.display = 'none';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      
-      // Show success message
-      setSnackbar({
-        isOpen: true,
-        message: "File opened in new tab. You can save it from there.",
-        type: 'success'
-      });
-    } else {
-      // For desktop, use the blob download method
-      fetch(filePath)
-        .then(response => response.blob())
-        .then(blob => {
-          const url = window.URL.createObjectURL(blob);
-          const link = document.createElement('a');
-          link.href = url;
-          link.download = fileName;
-          link.style.display = 'none';
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
+    // Use fetch for all devices - more reliable
+    fetch(filePath)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.blob();
+      })
+      .then(blob => {
+        // Create blob URL
+        const url = window.URL.createObjectURL(blob);
+        
+        // Create download link
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = fileName;
+        link.style.display = 'none';
+        
+        // Add to DOM, click, and remove
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        // Clean up blob URL
+        setTimeout(() => {
           window.URL.revokeObjectURL(url);
-        })
-        .catch(error => {
-          console.error('Download failed:', error);
-          setSnackbar({
-            isOpen: true,
-            message: "Download failed. Please try again.",
-            type: 'error'
-          });
+        }, 100);
+        
+        // Show success message
+        setSnackbar({
+          isOpen: true,
+          message: "Download started successfully!",
+          type: 'success'
         });
-    }
+      })
+      .catch(error => {
+        console.error('Download failed:', error);
+        setSnackbar({
+          isOpen: true,
+          message: "Download failed. Please try again or contact support.",
+          type: 'error'
+        });
+      });
   };
 
   if (!result) {
