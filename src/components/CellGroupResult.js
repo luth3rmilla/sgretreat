@@ -72,11 +72,18 @@ const CellGroupResult = () => {
     if (sessionType === 'Morning') {
       link.href = '/Saving Grace Retreat - Morning Session.pdf';
       link.download = 'Saving Grace Retreat - Morning Session.pdf';
+      link.type = 'application/pdf';
     } else if (sessionType === 'Afternoon') {
       link.href = '/Saving Grace Retreat - Evening Session.pdf';
       link.download = 'Saving Grace Retreat - Evening Session.pdf';
+      link.type = 'application/pdf';
     }
+    
+    // Ensure the link is properly configured for download
+    link.style.display = 'none';
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   if (!result) {
